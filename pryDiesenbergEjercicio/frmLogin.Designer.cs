@@ -88,7 +88,6 @@ partial class frmLogin
         btnCancelar_click.TabIndex = 5;
         btnCancelar_click.Text = "&Cancelar";
         btnCancelar_click.UseVisualStyleBackColor = true;
-      
         // 
         // btnAceptar
         // 
@@ -134,6 +133,7 @@ partial class frmLogin
         Margin = new Padding(6);
         Name = "frmLogin";
         Text = "LOGIN";
+        Load += frmLogin_Load;
         ResumeLayout(false);
         PerformLayout();
     }

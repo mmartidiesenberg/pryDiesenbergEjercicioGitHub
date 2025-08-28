@@ -19,7 +19,10 @@ namespace pryDiesenbergEjercicio
 
         private void btnAceptar_Click(object sender, EventArgs e)
         {
-            this.Close();
+            frmLogin login = new frmLogin();
+            login.Show();
+            this.Hide();
+            login.FormClosed += (s, args) => this.Close();
         }
     }
 }

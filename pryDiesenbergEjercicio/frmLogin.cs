@@ -20,9 +20,6 @@ public partial class frmLogin : Form
 
                 {
                     this.Hide(); // oculta este formualrio
-                    frmInicio f = new frmInicio(); // crea el frmInicio
-                    f.Text = txtUsuario.Text; // asigna el texto de título
-                    f.ShowDialog(); // visualiza y ejecuta el frmInicio
                     this.Show(); // visualiza nuevamente este formulario
                 }
                 else
@@ -33,10 +30,16 @@ public partial class frmLogin : Form
 
         }
     }
-private void btnCancelar_click_Click(object sender, EventArgs e)
+    private void btnCancelar_click_Click(object sender, EventArgs e)
     {
         this.Close();
-    } }
+    }
+
+    private void frmLogin_Load(object sender, EventArgs e)
+    {
+
+    }
+}
 
   
 
