@@ -88,7 +88,7 @@ partial class frmLogin
         btnCancelar_click.TabIndex = 5;
         btnCancelar_click.Text = "&Cancelar";
         btnCancelar_click.UseVisualStyleBackColor = true;
-        btnCancelar_click.Click += btnCancelar_click_Click;
+      
         // 
         // btnAceptar
         // 

@@ -33,10 +33,11 @@ public partial class frmLogin : Form
 
         }
     }
-
-    private void btnCancelar_click_Click(object sender, EventArgs e)
+private void btnCancelar_click_Click(object sender, EventArgs e)
     {
         this.Close();
-    }
-}
+    } }
+
+  
+
 
