@@ -32,74 +32,80 @@ partial class frmLogin
         lblContraseña = new Label();
         txtContraseña = new TextBox();
         txtUsuario = new TextBox();
-        btnAceptar_click = new Button();
         btnCancelar_click = new Button();
+        btnAceptar = new Button();
         SuspendLayout();
         // 
         // lblUsuario
         // 
         lblUsuario.AutoSize = true;
-        lblUsuario.Location = new Point(57, 48);
+        lblUsuario.Location = new Point(106, 102);
+        lblUsuario.Margin = new Padding(6, 0, 6, 0);
         lblUsuario.Name = "lblUsuario";
-        lblUsuario.Size = new Size(47, 15);
+        lblUsuario.Size = new Size(94, 32);
         lblUsuario.TabIndex = 0;
         lblUsuario.Text = "Usuario";
         // 
         // lblContraseña
         // 
         lblContraseña.AutoSize = true;
-        lblContraseña.Location = new Point(57, 111);
+        lblContraseña.Location = new Point(106, 237);
+        lblContraseña.Margin = new Padding(6, 0, 6, 0);
         lblContraseña.Name = "lblContraseña";
-        lblContraseña.Size = new Size(67, 15);
+        lblContraseña.Size = new Size(134, 32);
         lblContraseña.TabIndex = 1;
         lblContraseña.Text = "Contraseña";
         // 
         // txtContraseña
         // 
-        txtContraseña.Location = new Point(143, 111);
+        txtContraseña.Location = new Point(266, 237);
+        txtContraseña.Margin = new Padding(6);
         txtContraseña.Name = "txtContraseña";
-        txtContraseña.Size = new Size(100, 23);
+        txtContraseña.Size = new Size(182, 39);
         txtContraseña.TabIndex = 2;
         // 
         // txtUsuario
         // 
-        txtUsuario.Location = new Point(143, 45);
+        txtUsuario.Location = new Point(266, 96);
+        txtUsuario.Margin = new Padding(6);
         txtUsuario.Name = "txtUsuario";
-        txtUsuario.Size = new Size(100, 23);
+        txtUsuario.Size = new Size(182, 39);
         txtUsuario.TabIndex = 3;
-        // 
-        // btnAceptar_click
-        // 
-        btnAceptar_click.Location = new Point(304, 44);
-        btnAceptar_click.Name = "btnAceptar_click";
-        btnAceptar_click.RightToLeft = RightToLeft.No;
-        btnAceptar_click.Size = new Size(75, 23);
-        btnAceptar_click.TabIndex = 4;
-        btnAceptar_click.Text = "Aceptar";
-        btnAceptar_click.UseVisualStyleBackColor = true;
-        btnAceptar_click.Click += btnAceptar_click_Click;
         // 
         // btnCancelar_click
         // 
-        btnCancelar_click.Location = new Point(304, 111);
+        btnCancelar_click.Location = new Point(565, 237);
+        btnCancelar_click.Margin = new Padding(6);
         btnCancelar_click.Name = "btnCancelar_click";
         btnCancelar_click.RightToLeft = RightToLeft.Yes;
-        btnCancelar_click.Size = new Size(75, 23);
+        btnCancelar_click.Size = new Size(139, 49);
         btnCancelar_click.TabIndex = 5;
         btnCancelar_click.Text = "Cancelar";
         btnCancelar_click.UseVisualStyleBackColor = true;
+        btnCancelar_click.Click += btnCancelar_click_Click;
+        // 
+        // btnAceptar
+        // 
+        btnAceptar.Location = new Point(554, 89);
+        btnAceptar.Name = "btnAceptar";
+        btnAceptar.Size = new Size(150, 46);
+        btnAceptar.TabIndex = 6;
+        btnAceptar.Text = "Aceptar";
+        btnAceptar.UseVisualStyleBackColor = true;
+        btnAceptar.Click += btnAceptar_Click_1;
         // 
         // frmLogin
         // 
-        AutoScaleDimensions = new SizeF(7F, 15F);
+        AutoScaleDimensions = new SizeF(13F, 32F);
         AutoScaleMode = AutoScaleMode.Font;
-        ClientSize = new Size(486, 198);
+        ClientSize = new Size(903, 422);
+        Controls.Add(btnAceptar);
         Controls.Add(btnCancelar_click);
-        Controls.Add(btnAceptar_click);
         Controls.Add(txtUsuario);
         Controls.Add(txtContraseña);
         Controls.Add(lblContraseña);
         Controls.Add(lblUsuario);
+        Margin = new Padding(6);
         Name = "frmLogin";
         Text = "LOGIN";
         ResumeLayout(false);
@@ -112,6 +118,6 @@ partial class frmLogin
     private Label lblContraseña;
     private TextBox txtContraseña;
     private TextBox txtUsuario;
-    private Button btnAceptar_click;
     private Button btnCancelar_click;
+    private Button btnAceptar;
 }
