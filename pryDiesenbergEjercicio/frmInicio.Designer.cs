@@ -30,6 +30,7 @@
         {
             lblBienvenida = new Label();
             btnAceptar = new Button();
+            label1 = new Label();
             SuspendLayout();
             // 
             // lblBienvenida
@@ -47,7 +48,7 @@
             // 
             btnAceptar.Font = new Font("Segoe UI", 10F);
             btnAceptar.Location = new Point(440, 228);
-            btnAceptar.Margin = new Padding(6, 6, 6, 6);
+            btnAceptar.Margin = new Padding(6);
             btnAceptar.Name = "btnAceptar";
             btnAceptar.Size = new Size(204, 79);
             btnAceptar.TabIndex = 1;
@@ -55,14 +56,24 @@
             btnAceptar.UseVisualStyleBackColor = true;
             btnAceptar.Click += btnAceptar_Click;
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(484, 339);
+            label1.Name = "label1";
+            label1.Size = new Size(78, 32);
+            label1.TabIndex = 2;
+            label1.Text = "label1";
+            // 
             // frmInicio
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1070, 454);
+            Controls.Add(label1);
             Controls.Add(btnAceptar);
             Controls.Add(lblBienvenida);
-            Margin = new Padding(6, 6, 6, 6);
+            Margin = new Padding(6);
             Name = "frmInicio";
             Text = "Inicio";
             ResumeLayout(false);
@@ -73,5 +84,6 @@
 
         private Label lblBienvenida;
         private Button btnAceptar;
+        private Label label1;
     }
 }
