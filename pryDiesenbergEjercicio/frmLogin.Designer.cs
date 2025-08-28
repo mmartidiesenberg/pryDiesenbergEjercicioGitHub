@@ -34,6 +34,8 @@ partial class frmLogin
         txtUsuario = new TextBox();
         btnCancelar_click = new Button();
         btnAceptar = new Button();
+        lstModulo = new ComboBox();
+        lblModulo = new Label();
         SuspendLayout();
         // 
         // lblUsuario
@@ -60,14 +62,18 @@ partial class frmLogin
         // 
         txtContraseña.Location = new Point(266, 237);
         txtContraseña.Margin = new Padding(6);
+        txtContraseña.MaxLength = 10;
         txtContraseña.Name = "txtContraseña";
+        txtContraseña.PasswordChar = '#';
         txtContraseña.Size = new Size(182, 39);
         txtContraseña.TabIndex = 2;
         // 
         // txtUsuario
         // 
+        txtUsuario.ForeColor = SystemColors.HotTrack;
         txtUsuario.Location = new Point(266, 96);
         txtUsuario.Margin = new Padding(6);
+        txtUsuario.MaxLength = 10;
         txtUsuario.Name = "txtUsuario";
         txtUsuario.Size = new Size(182, 39);
         txtUsuario.TabIndex = 3;
@@ -80,7 +86,7 @@ partial class frmLogin
         btnCancelar_click.RightToLeft = RightToLeft.Yes;
         btnCancelar_click.Size = new Size(139, 49);
         btnCancelar_click.TabIndex = 5;
-        btnCancelar_click.Text = "Cancelar";
+        btnCancelar_click.Text = "&Cancelar";
         btnCancelar_click.UseVisualStyleBackColor = true;
         btnCancelar_click.Click += btnCancelar_click_Click;
         // 
@@ -90,15 +96,35 @@ partial class frmLogin
         btnAceptar.Name = "btnAceptar";
         btnAceptar.Size = new Size(150, 46);
         btnAceptar.TabIndex = 6;
-        btnAceptar.Text = "Aceptar";
+        btnAceptar.Text = "&Aceptar";
         btnAceptar.UseVisualStyleBackColor = true;
         btnAceptar.Click += btnAceptar_Click_1;
+        // 
+        // lstModulo
+        // 
+        lstModulo.FormattingEnabled = true;
+        lstModulo.Items.AddRange(new object[] { "ADM", "SIST", "COM", "VTA" });
+        lstModulo.Location = new Point(266, 342);
+        lstModulo.Name = "lstModulo";
+        lstModulo.Size = new Size(182, 40);
+        lstModulo.TabIndex = 7;
+        // 
+        // lblModulo
+        // 
+        lblModulo.AutoSize = true;
+        lblModulo.Location = new Point(106, 342);
+        lblModulo.Name = "lblModulo";
+        lblModulo.Size = new Size(98, 32);
+        lblModulo.TabIndex = 8;
+        lblModulo.Text = "Módulo";
         // 
         // frmLogin
         // 
         AutoScaleDimensions = new SizeF(13F, 32F);
         AutoScaleMode = AutoScaleMode.Font;
         ClientSize = new Size(903, 422);
+        Controls.Add(lblModulo);
+        Controls.Add(lstModulo);
         Controls.Add(btnAceptar);
         Controls.Add(btnCancelar_click);
         Controls.Add(txtUsuario);
@@ -120,4 +146,6 @@ partial class frmLogin
     private TextBox txtUsuario;
     private Button btnCancelar_click;
     private Button btnAceptar;
+    private ComboBox lstModulo;
+    private Label lblModulo;
 }
