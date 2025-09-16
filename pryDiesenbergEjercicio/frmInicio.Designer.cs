@@ -35,18 +35,19 @@
             // lblBienvenida
             // 
             lblBienvenida.AutoSize = true;
-            lblBienvenida.Font = new Font("Segoe UI", 30F);
-            lblBienvenida.Location = new Point(165, 107);
+            lblBienvenida.Font = new Font("Segoe UI", 30F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblBienvenida.ForeColor = Color.DarkGreen;
+            lblBienvenida.Location = new Point(145, 102);
             lblBienvenida.Margin = new Padding(6, 0, 6, 0);
             lblBienvenida.Name = "lblBienvenida";
-            lblBienvenida.Size = new Size(814, 106);
+            lblBienvenida.Size = new Size(868, 106);
             lblBienvenida.TabIndex = 0;
             lblBienvenida.Text = "Bienvenido al Sistema";
             // 
             // btnAceptar
             // 
             btnAceptar.Font = new Font("Segoe UI", 10F);
-            btnAceptar.Location = new Point(440, 228);
+            btnAceptar.Location = new Point(432, 214);
             btnAceptar.Margin = new Padding(6);
             btnAceptar.Name = "btnAceptar";
             btnAceptar.Size = new Size(204, 79);
@@ -59,11 +60,13 @@
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.ScrollBar;
             ClientSize = new Size(1070, 454);
             Controls.Add(btnAceptar);
             Controls.Add(lblBienvenida);
             Margin = new Padding(6);
             Name = "frmInicio";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Inicio";
             ResumeLayout(false);
             PerformLayout();
