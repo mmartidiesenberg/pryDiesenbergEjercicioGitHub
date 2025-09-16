@@ -39,7 +39,7 @@ public partial class frmLogin : Form
     {
         this.Close();
     }
-
+    //pryDiesenbergEjercicioGitHub es el ejercicio de la SP1
     private void txtUsuario_TextChanged(object sender, EventArgs e)
     {
 
