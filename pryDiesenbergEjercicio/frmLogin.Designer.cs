@@ -28,6 +28,7 @@ partial class frmLogin
     /// </summary>
     private void InitializeComponent()
     {
+        System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmLogin));
         lblUsuario = new Label();
         lblContraseña = new Label();
         txtContraseña = new TextBox();
@@ -130,6 +131,7 @@ partial class frmLogin
         Controls.Add(txtContraseña);
         Controls.Add(lblContraseña);
         Controls.Add(lblUsuario);
+        Icon = (Icon)resources.GetObject("$this.Icon");
         Name = "frmLogin";
         Text = "LOGIN";
         Load += frmLogin_Load;
