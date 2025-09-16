@@ -30,12 +30,17 @@ public partial class frmLogin : Form
 
         }
     }
-    private void btnCancelar_click_Click(object sender, EventArgs e)
+    private void frmLogin_Load(object sender, EventArgs e)
+    {
+
+    }
+
+    private void btnCancelar_click_Click_1(object sender, EventArgs e)
     {
         this.Close();
     }
 
-    private void frmLogin_Load(object sender, EventArgs e)
+    private void txtUsuario_TextChanged(object sender, EventArgs e)
     {
 
     }

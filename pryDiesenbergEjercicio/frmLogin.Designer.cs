@@ -41,59 +41,57 @@ partial class frmLogin
         // lblUsuario
         // 
         lblUsuario.AutoSize = true;
-        lblUsuario.Location = new Point(106, 102);
-        lblUsuario.Margin = new Padding(6, 0, 6, 0);
+        lblUsuario.Location = new Point(57, 48);
         lblUsuario.Name = "lblUsuario";
-        lblUsuario.Size = new Size(94, 32);
+        lblUsuario.Size = new Size(47, 15);
         lblUsuario.TabIndex = 0;
         lblUsuario.Text = "Usuario";
         // 
         // lblContraseña
         // 
         lblContraseña.AutoSize = true;
-        lblContraseña.Location = new Point(106, 237);
-        lblContraseña.Margin = new Padding(6, 0, 6, 0);
+        lblContraseña.Location = new Point(57, 111);
         lblContraseña.Name = "lblContraseña";
-        lblContraseña.Size = new Size(134, 32);
+        lblContraseña.Size = new Size(67, 15);
         lblContraseña.TabIndex = 1;
         lblContraseña.Text = "Contraseña";
         // 
         // txtContraseña
         // 
-        txtContraseña.Location = new Point(266, 237);
-        txtContraseña.Margin = new Padding(6);
+        txtContraseña.Location = new Point(143, 111);
         txtContraseña.MaxLength = 10;
         txtContraseña.Name = "txtContraseña";
         txtContraseña.PasswordChar = '#';
-        txtContraseña.Size = new Size(182, 39);
+        txtContraseña.Size = new Size(100, 23);
         txtContraseña.TabIndex = 2;
         // 
         // txtUsuario
         // 
         txtUsuario.ForeColor = SystemColors.HotTrack;
-        txtUsuario.Location = new Point(266, 96);
-        txtUsuario.Margin = new Padding(6);
-        txtUsuario.MaxLength = 10;
+        txtUsuario.Location = new Point(143, 45);
+        txtUsuario.MaxLength = 20;
         txtUsuario.Name = "txtUsuario";
-        txtUsuario.Size = new Size(182, 39);
+        txtUsuario.Size = new Size(100, 23);
         txtUsuario.TabIndex = 3;
+        txtUsuario.TextChanged += txtUsuario_TextChanged;
         // 
         // btnCancelar_click
         // 
-        btnCancelar_click.Location = new Point(565, 237);
-        btnCancelar_click.Margin = new Padding(6);
+        btnCancelar_click.Location = new Point(304, 111);
         btnCancelar_click.Name = "btnCancelar_click";
         btnCancelar_click.RightToLeft = RightToLeft.Yes;
-        btnCancelar_click.Size = new Size(139, 49);
+        btnCancelar_click.Size = new Size(75, 23);
         btnCancelar_click.TabIndex = 5;
         btnCancelar_click.Text = "&Cancelar";
         btnCancelar_click.UseVisualStyleBackColor = true;
+        btnCancelar_click.Click += btnCancelar_click_Click_1;
         // 
         // btnAceptar
         // 
-        btnAceptar.Location = new Point(554, 89);
+        btnAceptar.Location = new Point(298, 42);
+        btnAceptar.Margin = new Padding(2, 1, 2, 1);
         btnAceptar.Name = "btnAceptar";
-        btnAceptar.Size = new Size(150, 46);
+        btnAceptar.Size = new Size(81, 22);
         btnAceptar.TabIndex = 6;
         btnAceptar.Text = "&Aceptar";
         btnAceptar.UseVisualStyleBackColor = true;
@@ -103,25 +101,27 @@ partial class frmLogin
         // 
         lstModulo.FormattingEnabled = true;
         lstModulo.Items.AddRange(new object[] { "ADM", "SIST", "COM", "VTA" });
-        lstModulo.Location = new Point(266, 342);
+        lstModulo.Location = new Point(143, 160);
+        lstModulo.Margin = new Padding(2, 1, 2, 1);
         lstModulo.Name = "lstModulo";
-        lstModulo.Size = new Size(182, 40);
+        lstModulo.Size = new Size(100, 23);
         lstModulo.TabIndex = 7;
         // 
         // lblModulo
         // 
         lblModulo.AutoSize = true;
-        lblModulo.Location = new Point(106, 342);
+        lblModulo.Location = new Point(57, 160);
+        lblModulo.Margin = new Padding(2, 0, 2, 0);
         lblModulo.Name = "lblModulo";
-        lblModulo.Size = new Size(98, 32);
+        lblModulo.Size = new Size(49, 15);
         lblModulo.TabIndex = 8;
         lblModulo.Text = "Módulo";
         // 
         // frmLogin
         // 
-        AutoScaleDimensions = new SizeF(13F, 32F);
+        AutoScaleDimensions = new SizeF(7F, 15F);
         AutoScaleMode = AutoScaleMode.Font;
-        ClientSize = new Size(903, 422);
+        ClientSize = new Size(486, 198);
         Controls.Add(lblModulo);
         Controls.Add(lstModulo);
         Controls.Add(btnAceptar);
@@ -130,7 +130,6 @@ partial class frmLogin
         Controls.Add(txtContraseña);
         Controls.Add(lblContraseña);
         Controls.Add(lblUsuario);
-        Margin = new Padding(6);
         Name = "frmLogin";
         Text = "LOGIN";
         Load += frmLogin_Load;
