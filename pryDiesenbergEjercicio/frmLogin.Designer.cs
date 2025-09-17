@@ -35,8 +35,6 @@ partial class frmLogin
         txtUsuario = new TextBox();
         btnCancelar_click = new Button();
         btnAceptar = new Button();
-        lstModulo = new ComboBox();
-        lblModulo = new Label();
         SuspendLayout();
         // 
         // lblUsuario
@@ -105,35 +103,12 @@ partial class frmLogin
         btnAceptar.UseVisualStyleBackColor = true;
         btnAceptar.Click += btnAceptar_Click_1;
         // 
-        // lstModulo
-        // 
-        lstModulo.FormattingEnabled = true;
-        lstModulo.Items.AddRange(new object[] { "ADM", "SIST", "COM", "VTA" });
-        lstModulo.Location = new Point(266, 341);
-        lstModulo.Margin = new Padding(4, 2, 4, 2);
-        lstModulo.Name = "lstModulo";
-        lstModulo.Size = new Size(182, 40);
-        lstModulo.TabIndex = 7;
-        // 
-        // lblModulo
-        // 
-        lblModulo.AutoSize = true;
-        lblModulo.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-        lblModulo.Location = new Point(106, 341);
-        lblModulo.Margin = new Padding(4, 0, 4, 0);
-        lblModulo.Name = "lblModulo";
-        lblModulo.Size = new Size(104, 32);
-        lblModulo.TabIndex = 8;
-        lblModulo.Text = "Módulo";
-        // 
         // frmLogin
         // 
         AutoScaleDimensions = new SizeF(13F, 32F);
         AutoScaleMode = AutoScaleMode.Font;
         BackColor = SystemColors.ScrollBar;
         ClientSize = new Size(903, 422);
-        Controls.Add(lblModulo);
-        Controls.Add(lstModulo);
         Controls.Add(btnAceptar);
         Controls.Add(btnCancelar_click);
         Controls.Add(txtUsuario);
@@ -158,6 +133,4 @@ partial class frmLogin
     private TextBox txtUsuario;
     private Button btnCancelar_click;
     private Button btnAceptar;
-    private ComboBox lstModulo;
-    private Label lblModulo;
 }
