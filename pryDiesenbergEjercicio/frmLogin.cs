@@ -13,14 +13,14 @@ public partial class frmLogin : Form
     {
         {
             {
+                
                 if ((txtUsuario.Text == "Administrador" &&
                     txtContraseña.Text == "adm135$") ||
                     (txtUsuario.Text == "Operador" &&
                     txtContraseña.Text == "ope246$"))
-
                 {
-                    this.Hide(); // oculta este formualrio
-                    this.Show(); // visualiza nuevamente este formulario
+                    frmInicio inicio = new frmInicio();
+                    inicio.Show();
                 }
                 else
                 {

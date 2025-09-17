@@ -68,6 +68,7 @@
             Name = "frmInicio";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Inicio";
+            Load += frmInicio_Load;
             ResumeLayout(false);
             PerformLayout();
         }
